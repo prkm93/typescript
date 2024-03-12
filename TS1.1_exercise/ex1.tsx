@@ -111,4 +111,6 @@ type Teacher = Person & {
 
 let id: string | number;
 
-let numberOrStringArray: number[] | string[];
+let numberOrStringArray : (number | string)[] = [1,2,"ravi"] ;
+
+let mixedArray : (number| string | boolean) [] = [1,2,"ravi"];
