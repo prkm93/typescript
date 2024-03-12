@@ -118,3 +118,5 @@ let mixedArray : (number| string | boolean) [] = [1,2,"ravi"];
 const inferredArray = ["apple", "ravi"]; // its type is by default string , inferenced by typescript
 
 // Type inference is when typescript automatically figures out type of variable based on its initial value
+
+let myInferredNumber = 10 // type number inferenced automatically
