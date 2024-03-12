@@ -74,3 +74,41 @@ let personDetails: {
   scores: [23, 45, 67],
   extraInfo: null,
 };
+
+/******** Types */
+
+type TypeA = { propA: string };
+
+let obj1: TypeA = {
+  propA: "Ravi",
+};
+
+type TypeB = { propB: number };
+
+let obj2: TypeB = {
+  propB: 45,
+};
+
+type TypeC = TypeA & TypeB;
+
+let objC: TypeC = {
+  propA: "Amish",
+  propB: 34,
+};
+
+type Person = {
+  name: string;
+  age: 34;
+};
+
+type Student = Person & {
+  studentId: string;
+};
+
+type Teacher = Person & {
+  subject: string;
+};
+
+let id: string | number;
+
+let numberOrStringArray: number[] | string[];
