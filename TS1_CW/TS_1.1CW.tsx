@@ -96,10 +96,10 @@ let objC: TypeC = {
   propB: 34,
 };
 
-type Person = {
-  name: string;
-  age: 34;
-};
+// type Person = {
+//   name: string;
+//   age: 34;
+// };
 
 type Student = Person & {
   studentId: string;
@@ -111,12 +111,12 @@ type Teacher = Person & {
 
 let id: string | number;
 
-let numberOrStringArray : (number | string)[] = [1,2,"ravi"] ;
+let numberOrStringArray: (number | string)[] = [1, 2, "ravi"];
 
-let mixedArray : (number| string | boolean) [] = [1,2,"ravi"];
+let mixedArray: (number | string | boolean)[] = [1, 2, "ravi"];
 
 const inferredArray = ["apple", "ravi"]; // its type is by default string , inferenced by typescript
 
 // Type inference is when typescript automatically figures out type of variable based on its initial value
 
-let myInferredNumber = 10 // type number inferenced automatically
+let myInferredNumber = 10; // type number inferenced automatically
